@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #8B0000;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+
+    h2 {
+      margin: 1.5rem 0 1rem;
+      color: #8B0000;
+      border-bottom: 2px solid #8B0000;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .menu-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-item h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .menu-item p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #8B0000;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍴Haldiram Delight</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Starters -->
+    <h2>Starters</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Garlic Bread</h3>
+        <p>Freshly baked bread with garlic butter and herbs.</p>
+        <span class="price">₹120</span>
+      </div>
+      <div class="menu-item">
+        <h3>Tomato Soup</h3>
+        <p>Rich and creamy soup served with croutons.</p>
+        <span class="price">₹150</span>
+      </div>
+    </div>
+
+    <!-- code for Main Course -->
+    <h2>Main Course</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Margherita Pizza</h3>
+        <p>Classic cheese pizza with fresh basil and tomato sauce.</p>
+        <span class="price">₹350</span>
+      </div>
+      <div class="menu-item">
+        <h3>Pasta Alfredo</h3>
+        <p>Creamy pasta tossed in white sauce and herbs.</p>
+        <span class="price">₹400</span>
+      </div>
+    </div>
+
+    <!-- Code for Desserts -->
+    <h2>Desserts</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Chocolate Brownie</h3>
+        <p>Warm brownie served with vanilla ice cream.</p>
+        <span class="price">₹180</span>
+      </div>
+      <div class="menu-item">
+        <h3>Cheesecake</h3>
+        <p>Classic baked cheesecake with berry topping.</p>
+        <span class="price">₹220</span>
+      </div>
+    </div>
+
+    <!--Code for Beverages -->
+     
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Lemon Iced Tea</h3>
+        <p>Refreshing chilled tea with lemon flavor.</p>
+        <span class="price">₹90</span>
+      </div>
+      <div class="menu-item">
+        <h3>Cappuccino</h3>
+        <p>Strong espresso with steamed milk and foam.</p>
+        <span class="price">₹120</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Gourmet Delight | Open: 10 AM – 11 PM | Contact: +91 98765 43210</p>
+  </footer>
+</body>
+</html>
